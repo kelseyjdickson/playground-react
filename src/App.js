@@ -1,13 +1,13 @@
 
 import './App.css';
-import LandingPage from './LandingPage'
+// import LandingPage from './LandingPage'
 import NavBar from './components/NavBar/NavBar'
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <LandingPage />
+      {/* <LandingPage /> */}
     </div>
   );
 }
