@@ -1,6 +1,6 @@
 
 import './App.css';
-// import LandingPage from './LandingPage'
+import LandingPage from './LandingPage'
 import NavBar from './components/NavBar/NavBar'
 import About from './components/About'
 
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <NavBar />
       <About />
-      {/* <LandingPage /> */}
+      <LandingPage />
     </div>
   );
 }
