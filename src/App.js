@@ -19,9 +19,11 @@ const list = [
 ];
 
 class App extends React.Component {
+
+  
   state = {
     currentUser: null,
-    list: list
+    list
   };
 
 handleLogin = currentUser => {
@@ -36,11 +38,9 @@ handleLogin = currentUser => {
   const notId = item => item.objectID !==id
   const updatedList = this.state.list.filter(notId);
   this.setState({ list: updatedList}) ;
-    
-  
+     }
 
-    
-  }
+  
 
   render() {
    
@@ -50,6 +50,11 @@ handleLogin = currentUser => {
         <NavBar />
         <About />
         <LandingPage />
+        <form>
+          <input type="text"
+          onChange={this.onSearchChange}/>
+          
+        </form>
         {this.state.list.map(item => {
           return (
             <div key={item.objectID}>
@@ -61,7 +66,7 @@ handleLogin = currentUser => {
               <span>{item.points}</span>
               <span>
                 <button
-                  onClick={() => this.onDismiss(item.objectID)}
+                  onClick= {()=> this.onDismiss(item.objectID)}
                   type="button"
                 >
                   Dismiss
