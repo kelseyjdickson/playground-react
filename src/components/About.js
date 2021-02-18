@@ -4,7 +4,9 @@ import React from 'react'
 let About = () => {
 
     return(
-        <h1>Hi, I am Kelsey! </h1>
+        <>
+        </>
+        //  <h1>Hi, I am Kelsey! </h1>
         
     )
 }

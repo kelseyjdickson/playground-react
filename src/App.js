@@ -48,7 +48,7 @@ handleLogin = currentUser => {
       <div>
       <>
         <NavBar />
-        <About />
+        {/* <About /> */}
         <LandingPage />
         <form>
           <input type="text"
@@ -72,9 +72,13 @@ handleLogin = currentUser => {
                   Dismiss
                 </button>
               </span>
-            </div>
+        </div>
           );
-        })}
+        
+        }
+        )
+      
+      }
         <Route path="/login">
           <Login handleLogin={this.handleLogin} />
         </Route>

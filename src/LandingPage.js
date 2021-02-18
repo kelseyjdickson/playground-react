@@ -1,20 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
+import styled from 'styled-components'
+import { Button } from './styles'
 
-//  const LandingPage = () => {
 
-//     let [count, setCount] = useState(0)
 
-//     return(
-//         <div>
-//             <h1>Counter</h1>
-//             <p>{count}</p>
-//             <button onClick={ ()=> setCount(count + 1)}>+</button>
-//             <button onClick={ ()=> setCount(count - 1)}>-</button>
-//             <button onClick={ ()=> setCount(0)}>Reset</button>
-//         </div>
-//     )
 
-// }
+
+
 
 class LandingPage extends React.Component {
   state = {
@@ -41,6 +33,21 @@ class LandingPage extends React.Component {
   render() {
     return (
       <>
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+        
+        <Button>Click Me!</Button>
+
+
+<br></br>
+<br></br>
+<br></br><br></br><br></br><br></br>
+
         <h1>Counter</h1>
         <p>{this.state.count}</p>
         <button onClick={this.increment}>+</button>
