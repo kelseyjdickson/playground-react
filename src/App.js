@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import LandingPage from "./LandingPage";
+import LandingPage1 from "./LandingPage1";
 import NavBar from "./components/NavBar/NavBar";
 import About from "./components/About";
 import SignUp from "./components/SignUp/SignUp";
@@ -49,7 +49,7 @@ handleLogin = currentUser => {
       <>
         <NavBar />
         {/* <About /> */}
-        <LandingPage />
+        <LandingPage1 />
         <form>
           <input type="text"
           onChange={this.onSearchChange}/>

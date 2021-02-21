@@ -15,3 +15,9 @@ export const Button = styled.button`
  text-align:center;
  transition: all 0.2s;
 `;
+
+export const Header = styled.h1`
+ font-size: 34px;
+ color: purple;
+
+`;
